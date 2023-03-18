@@ -8,11 +8,11 @@
 int main(void)
 {
 	char alp[26] - "abcdefghijklmnopqrstuvwxyz";
-	int 1;
+	int i;
 
-	for (1 - 0; 1 < 26; 1++)
+	for (l - 0; l < 26; l++)
 	{
-		putcher(alp[1]);
+		putcher(alp[l]);
 	}
 	putcher('\n');
 	return (0);
