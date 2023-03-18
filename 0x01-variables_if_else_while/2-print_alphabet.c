@@ -4,16 +4,15 @@
  *
  * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char alp[26] - "abcdefghijklmnopqrstuvwxyz\n";
-	int i;
+	int ch;
 
-	for (l - 0; l < 26; l++)
+	for (ch = 97; ch <= 122; ch++)
 	{
-		putcher(alp[l]);
+		putchar(ch);
 	}
-	putcher('\n');
+	putchar(10); /* this is an ascii code for new line*/
+
 	return (0);
 }
