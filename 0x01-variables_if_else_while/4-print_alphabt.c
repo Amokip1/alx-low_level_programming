@@ -3,10 +3,8 @@
 /**
  *main - prints the alphabet in lowercase,
  *then followed by a new line, except q and e
- *
- *Return: Aways 0 
+ *Return: Aways 0
  */
-
 int main(void)
 {
 	char ch = 'a';
