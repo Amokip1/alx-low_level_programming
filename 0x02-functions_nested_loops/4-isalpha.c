@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * Isalpha - checks 1 if the input is a
- * alphabetical character
- * @c: it is in ASCII code
- *
- * Return: 1 for letters 0 for if not
+ * _isalpha - checks for alphabetical letters
+ * @c: a charter to be checked
+ * Return: returns 1 if letter or 0 if not
  */
 int _isalpha(int c)
 {
