@@ -3,7 +3,8 @@
  * print_rev - prints a string, in reverse, then line
  * @s: input string.
  * Return: 0
- * */
+ *
+ */
 void print_rev(char *s)
 {
 	int count = 0;
