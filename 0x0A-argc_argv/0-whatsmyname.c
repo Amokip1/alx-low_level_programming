@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdout>
 
 /**
  * main - print the name of the program
