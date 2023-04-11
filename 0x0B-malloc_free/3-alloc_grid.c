@@ -1,41 +1,42 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * alloc_grid - return a pointer to 2 dimentional array int
- * @width: width of an array
- * @height: height of an array
- * Return: a pointer of array of int
+ * alloc_grid - return a pointer to 2 dime array
+ * @width: width input
+ * @height: height input
+ * Return: a pointer of an array of int
  */
 
 int **alloc_grid(int width, int height)
 {
-	int **get;
-	int x, y;
+	int **grt;
+	int a, b;
 
-	if (width <= 0 || height <= 0)
-	return (NULL)
-	get = malloc(sizeof(int *) * height);
-
-	if (get == NULL)
+	if (width < 1 || height < 1)
 	return (NULL);
 
-	for (x = 0; x < height; x++)
+	grt = malloc(height * sizeof(int *));
+	if (grt == NULL)
 	{
-	get[x] = malloc(sizeof(int) * width);
+	free(grt);
+	return (NULL);
+	}
 
-	if (get[x] == NULL)
+	for (a = 0; a < height; a++)
 	{
-	for (; x >= 0; x--)
-	free(get[x]);
-
-	free(get);
+	grt[a] = malloc(width * sizeof(int));
+	if (grt[a] == NULL)
+	{
+	for (a--; a >= 0; a--)
+	free(grt[a]);
+	free(grt);
 	return (NULL);
 	}
 	}
-	for (x = 0; x < height; x++)
-	{
-	for (y = 0; y < width; y++)
-	get[x][y] = 0;
-	}
-	return (get);
+
+	for (a = 0; a < height; a++)
+	for (b = 0; b < width; b++)
+	grt[a][b] = 0;
+
+	return (grt);
 }
