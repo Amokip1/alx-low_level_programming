@@ -29,18 +29,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	snut = sn1 + n;
 
-	snut = malloc(snut + 1);
+	sn = malloc(snut + 1);
 
-	if (snut == NULL)
+	if (sn == NULL)
 	return (NULL);
 
 	for (i = 0; i < snut; i++)
 	if (i < sn1)
-	snut[i] = s1[i];
+	sn[i] = s1[i];
 	else
-	snut[i] = s2[i - sn1];
+	sn[i] = s2[i - sn1];
 
-	snut[i] = '\0';
+	sn[i] = '\0';
 
-	return (snut);
+	return (sn);
 }
